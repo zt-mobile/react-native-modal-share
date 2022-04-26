@@ -123,7 +123,7 @@ RCT_EXPORT_METHOD(shareTo:(NSString *)schemeURL data:(NSString *)data resolver:(
                     dialog.fromViewController = rootViewController;
                     
                     if ([image CIImage] != nil || [image CGImage] != NULL){
-                        FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] initWithViewController: rootViewController content: nil delegate: nil];
+                        FBSDKShareDialog *photo = [[FBSDKShareDialog alloc] initWithViewController: rootViewController content: nil delegate: nil];
                         FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
                         content.photos = @[photo];
                         
