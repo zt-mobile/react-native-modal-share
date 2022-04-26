@@ -119,13 +119,11 @@ RCT_EXPORT_METHOD(shareTo:(NSString *)schemeURL data:(NSString *)data resolver:(
                 }
                 
                 if ([schemeURL isEqualToString: @"fb://"]) {
-                    FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] init];
+                    FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] initWithViewController: rootViewController content: nil delegate: nil];
                     dialog.fromViewController = rootViewController;
                     
                     if ([image CIImage] != nil || [image CGImage] != NULL){
-                        FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
-                        photo.image = image;
-                        photo.userGenerated = YES;
+                        FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] initWithViewController: rootViewController content: nil delegate: nil];
                         FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
                         content.photos = @[photo];
                         
@@ -144,9 +142,7 @@ RCT_EXPORT_METHOD(shareTo:(NSString *)schemeURL data:(NSString *)data resolver:(
                 else if ([schemeURL isEqualToString: @"fb-messenger://"]) {
                     
                     if ([image CIImage] != nil || [image CGImage] != NULL){
-                        FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
-                        photo.image = image;
-                        photo.userGenerated = YES;
+                        FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] initWithImage: image isUserGenerated:YES];
                         FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
                         content.photos = @[photo];
                         
