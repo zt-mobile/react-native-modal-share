@@ -1,7 +1,7 @@
 {
   "name": "@zt-mobile/react-native-modal-share",
   "title": "React Native Modal Share",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TODO",
   "main": "index.js",
   "dependencies": {
