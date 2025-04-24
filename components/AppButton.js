@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Platform
 } from "react-native";
-import Clipboard from "@react-native-community/clipboard";
+import Clipboard from "@react-native-clipboard/clipboard";
 import Toast from "react-native-simple-toast";
 import { NativeController } from "./index";
 import { shouldCloseModal, translate } from "../utils/AppHelper";
