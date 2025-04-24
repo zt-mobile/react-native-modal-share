@@ -24,8 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LkyYuen/react-native-modal-share.git",
-    "baseUrl": "https://github.com/LkyYuen/react-native-modal-share"
+    "url": "git+https://github.com/zt-mobile/react-native-modal-share.git",
+    "baseUrl": "https://github.com/zt-mobile/react-native-modal-share"
   },
   "keywords": [
     "react-native"
