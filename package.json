@@ -1,11 +1,10 @@
 {
   "name": "@zt-mobile/react-native-modal-share",
   "title": "React Native Modal Share",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "TODO",
   "main": "index.js",
   "dependencies": {
-    "@react-native-community/toolbar-android": "0.1.0-rc.2",
     "@react-native-clipboard/clipboard": "^1.16.2"
   },
   "files": [
